@@ -1,0 +1,86 @@
+table {
+    border: 1px solid #000;
+}
+tr {
+    border: 1px solid #000;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+.button-cont {
+    margin: 20px 0;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.67);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 200px;
+    width: 400px;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+}
+
+.modal-head h2 {
+    margin: auto auto auto 20px;
+}
+
+.modal-head button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: tomato;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.form-modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 5px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+        ". ."
+        ". .";
+}
+
+.submit-buton {
+    margin: 20px auto;
+}
+
+.close{
+    display: none;
+}

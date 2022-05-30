@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./min.js" async></script>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <title>crud</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Cadastro de usuários</h1>
+    </head>
+    <div class="button-cont">
+        <button id="addusuario">Add usuário</button>
+    </div>
+    <table id="tableUser">
+        <thead>
+            <tr>
+                <td>nome</td>
+                <td>email</td>
+                <td>telefone</td>
+                <td>dt_nascimento</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <div id="modal" class="modal close">
+        <div class="modal-body">
+            <div class="modal-head">
+                <h2>Cadastrar usuário</h2>
+                <button id="closebutton">X</button>
+            </div>
+            <form id="form">
+                <div class="form-modal">
+                    <input class="modal-field" type="text" name="nome" id="nome" placeholder="Insira o nome do usuario"
+                        required>
+                    <input class="modal-field" type="email" name="email" id="email"
+                        placeholder="Insira o email do usuario" required>
+                    <input class="modal-field" type="text" name="telefone" id="telefone"
+                        placeholder="Insira o telefone do usuario" required>
+                    <input class="modal-field" type="text" name="dt_nascimento" id="dt_nascimento"
+                        placeholder="Insira a data de nascimento" required>
+                </div>
+            </form>
+            <button id="salvar" class="submit-buton">Salvar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
